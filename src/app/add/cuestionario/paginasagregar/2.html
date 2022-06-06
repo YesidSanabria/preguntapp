@@ -1,0 +1,101 @@
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+}
+
+li {
+    float: left;
+    border-right:1px solid rgb(255, 255, 255);
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #79b98f;
+}
+
+.active {
+    background-color: #f17108;
+}
+
+
+</style>
+</head>
+<body>
+   
+<ul>
+  <li><a (click)="enviaraCuestionarios()">Cuestionarios</a></li>
+  <li><a href="#Resultados">Rasultados</a></li>
+  <li><a class="active" href="#Editar Cuestionario">Editar Cuestionario</a></li>
+  <li style="float:right"><a href="#Logout">Logout</a></li>
+</ul>
+
+
+<section>
+
+    <div class="container">
+        
+        <div class="container" style="width:50rem;" >
+            <div class="card" >
+                <div class="card-body">
+                    <h5>Pregunta 2</h5>
+                    <p>Ingrese el inidicador de su pregunta.  
+                    </p>
+                    <textarea style="height:100px; width: 725px;"id="textarea1" rows="1"></textarea>
+                    <p>
+                        Ingrese el contexto de su pregunta.
+                    </p>
+                    <textarea style="height:100px; width: 725px;" id="textarea1" rows="1"></textarea>
+                    <p>
+                        Ingrese las opciones de respuesta y marque la que es correcta.
+                    </p>
+                    <p><input type="checkbox" value=""> 1.  <input type="text" id="input" placeholder="Respuesta"></p>
+                    <p><input type="checkbox" value=""> 2.  <input type="text" id="input" placeholder="Respuesta"></p>
+                    <p><input type="checkbox" value=""> 3.  <input type="text" id="input" placeholder="Respuesta"></p>
+                    <p><input type="checkbox" value=""> 4.  <input type="text" id="input" placeholder="Respuesta"></p>
+                    
+                    <p>
+                        Ingrese la justificación de la respuesta correcta o de todas las opciones de respuesta incluida la correcta.
+                    </p>
+                    1. <textarea style="height:50px; width: 725px;" id="textarea1" rows="1"></textarea>
+                    2. <textarea style="height:50px; width: 725px;" id="textarea1" rows="1"></textarea>
+                    3. <textarea style="height:50px; width: 725px;" id="textarea1" rows="1"></textarea>
+                    4. <textarea style="height:50px; width: 725px;" id="textarea1" rows="1"></textarea>
+
+                    <div style="text-align: center;"class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                          <button (click)="pagina1()"type="button" class="btn btn-secondary">1</button>
+                          <button (click)="pagina3()"type="button" class="btn btn-secondary">3</button>
+                          <button (click)="paginaSiguiente()"type="button" class="btn btn-secondary">></button>
+                          <button (click)="paginaFinal()"type="button" class="btn btn-secondary">-></button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
