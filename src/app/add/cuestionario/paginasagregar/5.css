@@ -1,0 +1,13 @@
+body{
+    background-image: linear-gradient(to bottom right, #22dddd, #65df90);;
+  }
+
+  button{
+    width: auto;
+    padding: 10px;
+    background: #f17108;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+  }

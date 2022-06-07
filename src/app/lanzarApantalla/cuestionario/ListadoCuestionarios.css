@@ -4,9 +4,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
- 
+
 body{
-  background: #f1f1f1;
+  background-image: linear-gradient(to bottom right, #22dddd, #65df90);;
 }
  
 .container{
